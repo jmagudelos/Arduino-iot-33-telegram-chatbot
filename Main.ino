@@ -100,16 +100,16 @@ void handleNewMessages(int numNewMessages) {
 
 
 void printWiFiStatus() {
-  // print the SSID of the network you're attached to:
+  // Imprimimos en el puerto serial la red a la que nos queremos conectar
   Serial.print("SSID: ");
   Serial.println(WiFi.SSID());
 
-  // print your board's IP address:
+  // Imprimimos la direccion IP de la tarjeta
   IPAddress ip = WiFi.localIP();
   Serial.print("IP Address: ");
   Serial.println(ip);
 
-  // print the received signal strength:
+  // Imprimimos la intensidad de la señal recibida
   long rssi = WiFi.RSSI();
   Serial.print("signal strength (RSSI):");
   Serial.print(rssi);
