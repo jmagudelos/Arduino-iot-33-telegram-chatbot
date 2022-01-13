@@ -19,12 +19,12 @@
 // Las librerias se pueden descargar directamente en el IDE de arduino para tener la ultima version, esta es la documentacion incial
 // https://github.com/arduino-libraries/WiFiNINA
 // https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot/blob/master/examples/WifiNINA/EchoBot/EchoBot.ino
-// https://core.telegram.org/bots/api
+// https://core.telegram.org/bots/api - esta documentacion es solo de refencia realmente vamos a usar Universal Arduino
 
 // Libreria para conectar con telegram
 #include <UniversalTelegramBot.h>
 
-// Documentacion oficial - https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
+// Documentacion oficial - https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot * Tiene limitantes segun los comentarios
 
 #include <ArduinoJson.h>
 // Libreria recomendada para uso de JSON en Arduino
