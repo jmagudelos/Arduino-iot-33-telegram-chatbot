@@ -36,7 +36,9 @@ char ssid[] = SSID_network;         // Nombre de la red WIFI
 char password[] = SSID_password; // PASSWORD de la red WiFI
 
 // Es necesario crear un TOKEN para el bot desde telegram usando el servicio de (Botfather) elimine los // del comentario e incluya su token
+
 // #define BOT_TOKEN "***:***"
+
 //Asigna el token de acceso de Botfather ideal agregarlo desdel el archivo arduino_secrets adjunto aun que ahora hay que dejarlo directamente aqui en el main.ino***
 
 // IMPORTANTE es la seccion de certificados del Arduino IOT
@@ -119,13 +121,13 @@ void printWiFiStatus() {
 
 void setup()
 {
-    //Initialize serial and wait for port to open:
+    //inciaalizamos la comunicacion serial y esperamos la apertura del puerto
   Serial.begin(9600);
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
 
-  // check for the WiFi module:
+  // chequeamos la comunicacion WiFI
   if (WiFi.status() == WL_NO_MODULE) {
     Serial.println("Communication with WiFi module failed!");
     // don't continue
@@ -143,7 +145,7 @@ void setup()
     Serial.println(ssid);
     // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
     status = WiFi.begin(ssid, password);
-    // wait 10 seconds for connection:
+    // esperamos 10 segundos para la conexion
     delay(10000);
   }
   Serial.println("Connected to wifi");
