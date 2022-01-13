@@ -35,8 +35,9 @@
 char ssid[] = SSID_network;         // Nombre de la red WIFI
 char password[] = SSID_password; // PASSWORD de la red WiFI
 
-// Es necesario crear un TOKEN para el bot desde telegram usando el servicio de (Botfather)
-// #define BOT_TOKEN "***:***" *Asigna el token de acceso de Botfather ideal agregarlo desdel el archivo arduino_secrets adjunto***
+// Es necesario crear un TOKEN para el bot desde telegram usando el servicio de (Botfather) elimine los // del comentario e incluya su token
+// #define BOT_TOKEN "***:***"
+//Asigna el token de acceso de Botfather ideal agregarlo desdel el archivo arduino_secrets adjunto aun que ahora hay que dejarlo directamente aqui en el main.ino***
 
 // IMPORTANTE es la seccion de certificados del Arduino IOT
 // Agregar telegram.com como una ruta con certificado de seguridad HTTPS de lo contrario no hay conectividad para los protocolos
