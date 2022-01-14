@@ -8,15 +8,20 @@ Este repositorio es una revisión y adpatación del proyecto de Brian Lough en e
 ## Hardware necesario
 
 Arduino NANO 33 iot https://store.arduino.cc/products/arduino-nano-33-iot
+
 *Arduino MKR
+
 *Arduino UNO Wifi Rev2
 
 Conectividad mediante WIFI seguridad WPA / WPA2
 
 ## Basado en las librerías
 Arduino SPI.h
+
 Arduino WifiNINA.h
+
 Arduino ArduinoJson.h
+
 Brian Lough UniversalTelegramBot.h
 
 
