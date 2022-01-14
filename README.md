@@ -1,7 +1,7 @@
 # Arduino iot 33 telegram chatbot
 Repositorio Base de un Chatbot en Telegram con Arduino IOT
 
-# Hardware necesario
+## Hardware necesario
 
 Arduino NANO 33 iot https://store.arduino.cc/products/arduino-nano-33-iot
 *Arduino MKR
