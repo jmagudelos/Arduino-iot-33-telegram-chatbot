@@ -1,5 +1,5 @@
 /*******************************************************************
-    Un Bot de telegram para Arduino con WifiNINA.
+    Ejemplo de Bot en telegram para Arduino con Wifi NINA.
     Dispositivos:
     Arduino Nano 33 IOT
     Basado en el el proyecto y libreria de Brian Lough
@@ -103,7 +103,7 @@ void handleNewMessages(int numNewMessages) {
 
 
 void printWiFiStatus() {
-  // Imprimimos en el puerto serial la red a la que nos queremos conectar
+  // Imprimimos en el puerto serial la red WIFI a la que nos queremos conectar
   Serial.print("SSID: ");
   Serial.println(WiFi.SSID());
 
@@ -121,16 +121,15 @@ void printWiFiStatus() {
 
 void setup()
 {
-    //inciaalizamos la comunicacion serial y esperamos la apertura del puerto
+    //incializamos la comunicacion serial y esperamos la apertura del puerto
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
+    ; // Esperamos se conecte el puerto serial. Solo es util para puertos USB nativos
   }
 
-  // chequeamos la comunicacion WiFI
+  // Revisamos el status de la comunicacion WiFI
   if (WiFi.status() == WL_NO_MODULE) {
     Serial.println("Communication with WiFi module failed!");
-    // don't continue
     while (true);
   }
 
@@ -139,11 +138,11 @@ void setup()
     Serial.println("Please upgrade the firmware");
   }
 
-  // attempt to connect to WiFi network:
+  // Espera para realizar la conexion WIFI
   while (status != WL_CONNECTED) {
     Serial.print("Attempting to connect to SSID: ");
     Serial.println(ssid);
-    // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
+    // Conectando a WIFI con una red de seguridad WPA/WPA2. Cambia esta linea si usas una red WEP:
     status = WiFi.begin(ssid, password);
     // esperamos 10 segundos para la conexion
     delay(10000);
