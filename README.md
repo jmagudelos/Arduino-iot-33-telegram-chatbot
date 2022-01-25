@@ -46,10 +46,10 @@ b. Una vez cargado ese archivo para la actualizacion ingresa en el Arduino IDE e
 
 5. Reemplaza el nombre de tu red WIFI y PASSWORD
 
-6. Utiliza Botfather para generar tu bot en telegram, asignarle un nombre y conifgurar el mensaje de bienvenida
+6. Utiliza Botfather para generar tu bot en telegram, asignarle un nombre y configurar el mensaje de bienvenida
 
 7. Una vez obtengas tu propio botUSER en telegram genera el BOT_TOKEN y reemplazalo en la linea 40 BOT_TOKEN "0000:0000" conservando este formato
 
-8. Incluye el certificado de telegram SSL en el Arduino IDE en la opcion: Herramientas / WIFININA firmware updater/ 3. Update SSL root certficates < Add a Domain y selecciona la opcion Upload Certificates to WiFi Module
+8. Incluye el certificado de telegram SSL en el Arduino IDE en la opcion: Herramientas / WIFININA firmware updater/ (3). Update SSL root certficates < Add a Domain y selecciona la opcion Upload Certificates to WiFi Module
 
 9. Sube tu archivo a tu board arduino y abre el puerto serial para conocer el estado de la conexion.
